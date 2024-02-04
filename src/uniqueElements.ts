@@ -5,5 +5,12 @@
  * @returns - 回傳包含所有唯一元素的新陣列
  */
 export function uniqueElements(array: number[]): number[] {
-    // 請在此處寫下你的程式碼
+    let uniqueArray: number[] = [];
+    array.forEach((num) => {
+        if (!uniqueArray.includes(num)) {
+            uniqueArray.push(num);
+        }
+    })
+
+    return uniqueArray;
 }
