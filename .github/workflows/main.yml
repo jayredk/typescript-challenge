@@ -2,6 +2,7 @@ name: TypeScript Test
 on:
   push:
     branches: ["main"]
+  workflow_dispatch: 
 
 jobs:
   build:
